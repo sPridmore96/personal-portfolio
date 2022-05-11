@@ -1,0 +1,25 @@
+@use "./variables" as *;
+
+@mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexRowCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin smallIconSizing {
+    width: 30px;
+    height: 30px;
+}
+
+@mixin largeHeader {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 3.5rem;
+}

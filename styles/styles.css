@@ -1,4 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+.primary-color-button {
+  background-color: #BAE8E8;
+  border-radius: 5px;
+  margin: 4rem 0 2rem 0;
+  font-weight: 1000;
+}
+
+body {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 9rem;
+}
+.header__my-name {
+  display: inline;
+  color: #272643;
+}
+.header__left-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+}
+.header__right-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 4.7rem;
+}
+
+.welcome {
+  border: solid black 2px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__message {
+  color: grey;
+  font-weight: bold;
+  margin: 0 0 0.5rem -7rem;
+}
+.welcome__job-discription {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #272643;
+}
+.welcome__work-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.welcome__work-link a {
+  text-decoration: none;
+}
+.welcome__work-link a img {
+  width: 30px;
+  height: 30px;
+  margin-top: 0.1rem;
+}
+
+.grid-technical-skills {
+  display: grid;
+  grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
 }/*# sourceMappingURL=styles.css.map */

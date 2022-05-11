@@ -1,1 +1,65 @@
 @use "./variables" as *;
+@use "./mixins" as *;
+
+
+body {
+    padding: 0.5rem;
+    @include flexColumnCenter;
+}
+
+.header {
+    @include flexRowCenter();
+    margin-bottom: 9rem;
+
+    &__my-name {
+        display: inline;
+        color: $secondary-color;
+    }
+
+    &__left-icon {
+        @include smallIconSizing ();
+        margin-right: 1rem;
+
+    }
+
+    &__right-icon {
+        @include smallIconSizing ();
+        margin-left: 4.7rem;
+    }
+}
+
+.welcome {
+    border: solid black 2px;
+    width: 80%;
+    @include flexColumnCenter();
+
+    &__message {
+        color: grey;
+        font-weight: bold;
+        margin: 0 0 0.5rem -7rem;
+    }
+
+    &__job-discription {
+        @include largeHeader();
+        color: $secondary-color;
+    }
+
+    &__work-link {
+        @include flexRowCenter();
+        text-align: left;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+
+        a {
+            text-decoration: none;
+            img {
+                @include smallIconSizing();
+                margin-top: 0.1rem
+            }
+        }
+    }
+}
+
+.grid-technical-skills {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr ;
+}
