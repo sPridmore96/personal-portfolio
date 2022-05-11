@@ -124,17 +124,22 @@ body {
             background-color: white;
         }
     }
+}
+
+.grid__content {
+    width: 300px;
+    margin: auto;
 
     &-item-subtitle {
         @include smallHeader ();
-        margin-left: 8vw;
     }
+
     &-item-title {
         @include medHeader ();
-        margin: 0rem 0 1rem 8vw;
+        margin-bottom: 1rem;
 
     }
-    &-item--info {
-        margin: 0 0 0 8vw;
+    &-item-info {
+        color: $faded-grey;
     }
 }

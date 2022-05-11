@@ -143,19 +143,23 @@ body {
   overflow: hidden;
   background-color: white;
 }
-.projects__grid-item-subtitle {
+
+.grid__content {
+  width: 300px;
+  margin: auto;
+}
+.grid__content-item-subtitle {
   color: #E3F6F5;
   font-family: "Inter", sans-serif;
   font-weight: 800;
   font-size: 1em;
-  margin-left: 8vw;
 }
-.projects__grid-item-title {
+.grid__content-item-title {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
-  margin: 0rem 0 1rem 8vw;
+  margin-bottom: 1rem;
 }
-.projects__grid-item--info {
-  margin: 0 0 0 8vw;
+.grid__content-item-info {
+  color: grey;
 }/*# sourceMappingURL=styles.css.map */
