@@ -11,8 +11,7 @@
 
 <body>
     <div class="header">
-        <img class="header__left-icon" src="./icons/947-9477772_html-closing-tag-red-circle.png"
-            alt="closing tag coding Icon">
+        <img class="header__left-icon" src="./icons/CodeEndTag.png" alt="closing tag coding Icon">
         <h1 class="header__my-name">Sam Pridmore</h1>
         <img class="header__right-icon" src="./icons/imagesmenu.png" alt="drop down menu">
     </div>
@@ -20,47 +19,81 @@
     <div class="welcome">
         <p class="welcome__message">Hi! I'm Sam Pridmore</p>
         <p class="welcome__job-discription">A Junior <br> Software <br> Developer <br> Based In <br> The UK.</p>
-        <button class="welcome__work-link primary-color-button">Take a look at my work <a href="#my-work"><img src="./icons/Down_Arrow_Icon.png"
-                    alt="Down Arrow"></a> </button>
+        <button class="welcome__work-link primary-color-button">Take a look at my work <a href="#my-work"><img
+                    src="./icons/Down_Arrow_Icon.png" alt="Down Arrow"></a> </button>
     </div>
-    <div class="grid-technical-skills">
-        <div class="grid-item__10">Technical Skills</div>
-        <div class="grid-item__1"><img src="./icons/Vector-1.png" alt="Git Icon"></div>
-        <div class="grid-item__2"><img src="./icons/Vector-2.png" alt="HTML 5 Icon"></div>
-        <div class="grid-item__3"><img src="./icons/Vector-3.png" alt="CSS3 Icon"></div>
-        <div class="grid-item__4"><img src="./icons/Vector-4.png" alt="Javascript Icon"></div>
-        <div class="grid-item__5"><img src="./icons/Vector-5.png" alt="SCSS Icon"></div>
-        <div class="grid-item__6"><img src="./icons/Vector-6.png" alt="BEM Icon"></div>
-        <div class="grid-item__7"><img src="./icons/Vector-7.png" alt="React Icon"></div>
-        <div class="grid-item__8"><img src="./icons/Vector-8.png" alt="Java Icon"></div>
-        <div class="grid-item__9"><img src="./icons/Vector.png" alt="Spring Boot Icon"></div>
+    <div class="skills">
+        <div class="skills__header">
+            <h2 class="skills__header-title">Technical Skills</h2>
+            <p class="skills__header-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+                autem illum laboriosam voluptas
+                alias explicabo, quisquam nostrum cum ipsum voluptatum! Consectetur quae sed accusamus nulla natus
+                maiores voluptates suscipit debitis.</p>
+        </div>
+        <div class="skills__grid">
+            <div class="skills__grid-item"><img src="./icons/GIT.png" alt="Git Icon">
+                <h3 class="skills__grid-item-label">GIT</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/HTML.png" alt="HTML 5 Icon">
+                <h3 class="skills__grid-item-label">HTML</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/CSS.png" alt="CSS3 Icon">
+                <h3 class="skills__grid-item-label">CSS3</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/SCSS.png" alt="SCSS Icon">
+                <h3 class="skills__grid-item-label">SCSS</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/JS.png" alt="Javascript Icon">
+                <h3 class="skills__grid-item-label">Javascript</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/BEM.png" alt="BEM Icon">
+                <h3 class="skills__grid-item-label">BEM</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/Recat.png" alt="React Icon">
+                <h3 class="skills__grid-item-label">React</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/Java.png" alt="Java Icon">
+                <h3 class="skills__grid-item-label">Java</h3>
+            </div>
+            <div class="skills__grid-item"><img src="./icons/Spring.png" alt="Spring Boot Icon">
+                <h3 class="skills__grid-item-label">Spring Boot</h3>
+            </div>
+        </div>
     </div>
 
-    <div id="my-work" class="grid-my-projects">
-        <div class="grid-my-projects__client">
-            <img src="" alt="print screen of client Project">
-            <h2>Client Project</h2>
-            <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero dolore
-                quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
-                est
-                illo harum cumque.</p>
+    <div id="my-work" class="projects__grid">
+        <h2 class="projects__grid-title">My Projects</h2>
+        <div class="projects__grid-item-header">
+            <img class="projects__grid-item-header-img" src="./imgs/testImage.png" alt="print screen of client Project">
         </div>
-        <div class="grid-my-projects__rest-api">
-            <img src="" alt="print screen of Rest API">
-            <h2>Rest API</h2>
-            <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero dolore
-                quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
-                est
-                illo harum cumque.</p>
-        </div>
-        <div class="grid-my-projects__punk-api">
-            <img src="" alt="print screen of punk API">
-            <h2>Punk API</h2>
-            <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero dolore
-                quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
-                est
-                illo harum cumque.</p>
-        </div>
+        <h3 class="projects__grid-item-subtitle">React</h3>
+        <h2 class="projects__grid-item-title">Client Project</h2>
+        <p class="projects__grid-item-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
+            dolore
+            quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
+            est
+            illo harum cumque.</p>
+        <button class="project__grid-button">Code<img class="project__grid-button-img" src="" alt=""></button>
+        <img class="project__grid-icon" src="icons/CodeEndTag.png" alt="">
+        <button class="project__grid-button">Preview</button>
+        <img class="project__grid-icon" src="./icons/eyeIcon.webp" alt="">
+    </div>
+    <div class="grid-my-projects__rest-api">
+        <img class="projects__grid-item-img" src="" alt="print screen of Rest API">
+        <h2>Rest API</h2>
+        <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero dolore
+            quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
+            est
+            illo harum cumque.</p>
+    </div>
+    <div class="grid-my-projects__punk-api">
+        <img class="projects__grid-item-img" src="" alt="print screen of punk API">
+        <h2>Punk API</h2>
+        <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero dolore
+            quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
+            est
+            illo harum cumque.</p>
+    </div>
     </div>
 
     <div class="about-me">

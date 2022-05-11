@@ -18,8 +18,32 @@
     height: 30px;
 }
 
+@mixin midSizePhoto {
+    width: 250px;
+    
+}
+
 @mixin largeHeader {
     font-family: $main-font;
     font-weight: 600;
     font-size: 3.5rem;
+}
+
+@mixin medHeader {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: 1.5rem; 
+}
+
+@mixin smallHeader {
+    color: $primary-color;
+    font-family: $main-font;
+    font-weight:800;
+    font-size: 1em;
+}
+
+@mixin smallFont {
+    color: $faded-grey;
+    font-weight: 500;
+    font-size: 0.8rem;
 }
