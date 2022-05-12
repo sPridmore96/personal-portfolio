@@ -12,13 +12,12 @@ body {
 
     &__my-name {
         display: inline;
-        @include medHeader();
-
+        @include headerSizeWeight(1.5rem,7000)
     }
 
     &__left-icon {
         @include smallIconSizing ();
-        margin-right: 00.3rem
+        margin-right: 0.3rem
     }
 
     &__right-icon {
@@ -32,27 +31,27 @@ body {
     @include flexColumnCenter();
 
     &__message {
-        color: grey;
-        font-weight: bold;
+        @include smallFontSizeWeightColor(1.3rem,400);
         margin: 0 0 0.5rem -7rem;
     }
 
     &__job-discription {
-        @include largeHeader();
+        @include headerSizeWeight();
         color: $secondary-color;
     }
 
     &__work-link {
         @include flexRowCenter();
         text-align: left;
-        padding: 0.5rem 1rem 0.5rem 1rem;
+        @include smallFontSizeWeightColor(1.2rem, 700, $secondary-color);
 
         a {
             text-decoration: none;
+            
 
             img {
                 @include smallIconSizing();
-                margin-top: 0.1rem
+                margin: 0.1rem 0 0 1rem
             }
         }
     }
@@ -64,82 +63,80 @@ body {
 
     &__header {
         text-align: center;
-
-        &-title {
-            @include medHeader ();
-            color: $secondary-color;
-            margin-bottom: 4rem;
-        }
-
-        &-subtitle {
-            display: none;
-        }
+    }
+    &__title {
+        @include headerSizeWeight(2rem,600);
+        margin-bottom: 4rem;
     }
 
-    &__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2rem;
-        margin-bottom: 5rem;
-
-        &-item {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-
-            &-label {
-                @include smallFont ();
-                margin-top: 0.7rem;
-            }
-        }
+    &__subtitle {
+        display: none;
     }
 }
 
-.projects__grid {
-    width: 22rem;
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 5rem;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__label {
+        @include smallFontSizeWeightColor (1rem, 500);
+        margin-top: 0.7rem;
+    }
+}
+
+.projects__title {
+        text-align: center;
+        margin: 0 2rem 3rem 2rem;
+        @include headerSizeWeight (2rem,600)
+
+}
+
+.card{
+    width: 24rem;
     border: solid black 2px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 0.5rem;
-
-    &-title {
-        text-align: center;
-        @include medHeader();
-        margin: 2rem 0 2rem 0;
-    }
-
-    &-item-header {
+    
+    &__img-holder {
         display: flex;
         margin: auto;
         justify-content: center;
-        width: 300px;
+        width: 350px;
         padding: 3rem 0.3rem 0 0.3rem;
         background-color: $primary-color;
-
-        &-img {
-            @include midSizePhoto();
-            border-radius: 5px;
-            overflow: hidden;
-            background-color: white;
-        }
     }
-}
-
-.grid__content {
-    width: 300px;
-    margin: auto;
-
-    &-item-subtitle {
-        @include smallHeader ();
+    &__img {
+        @include midSizePhoto();
+        border-radius: 5px;
+        background-color: white;
     }
-
-    &-item-title {
-        @include medHeader ();
+    &__content {
+        width: 350px;
+        margin: auto;
+    }
+    &__subtitle {
+        @include smallFontSizeWeightColor (1rem, 700, $primary-color )
+    }
+    &__title {
+        @include headerSizeWeight(2rem, 600);
         margin-bottom: 1rem;
+    }
+    &__info {
+     @include smallFontSizeWeightColor ();
+    }
+    &__button {
 
     }
-    &-item-info {
-        color: $faded-grey;
-    }
+    // &__icon {
+
+    // }
 }

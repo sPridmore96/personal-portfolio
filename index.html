@@ -15,94 +15,76 @@
         <h1 class="header__my-name">Sam Pridmore</h1>
         <img class="header__right-icon" src="./icons/imagesmenu.png" alt="drop down menu">
     </div>
-
+    <!-- block -->
     <div class="welcome">
         <p class="welcome__message">Hi! I'm Sam Pridmore</p>
         <p class="welcome__job-discription">A Junior <br> Software <br> Developer <br> Based In <br> The UK.</p>
-        <button class="welcome__work-link primary-color-button">Take a look at my work <a href="#my-work"><img
+        <button class="welcome__work-link wide-button">Take a look at my work <a href="#my-work"><img
                     src="./icons/Down_Arrow_Icon.png" alt="Down Arrow"></a> </button>
     </div>
+    <!-- block -->
     <div class="skills">
         <div class="skills__header">
-            <h2 class="skills__header-title">Technical Skills</h2>
-            <p class="skills__header-subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            <h2 class="skills__title">Technical Skills</h2>
+            <p class="skills__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
                 autem illum laboriosam voluptas
                 alias explicabo, quisquam nostrum cum ipsum voluptatum! Consectetur quae sed accusamus nulla natus
                 maiores voluptates suscipit debitis.</p>
         </div>
-        <div class="skills__grid">
-            <div class="skills__grid-item"><img src="./icons/GIT.png" alt="Git Icon">
-                <h3 class="skills__grid-item-label">GIT</h3>
+    <!-- block -->
+        <div class="icons">
+            <div class="icons__item"><img src="./icons/GIT.png" alt="Git Icon">
+                <h3 class="icons__label">GIT</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/HTML.png" alt="HTML 5 Icon">
-                <h3 class="skills__grid-item-label">HTML</h3>
+            <div class="icons__item"><img src="./icons/HTML.png" alt="HTML 5 Icon">
+                <h3 class="icons__label">HTML</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/CSS.png" alt="CSS3 Icon">
-                <h3 class="skills__grid-item-label">CSS3</h3>
+            <div class="icons__item"><img src="./icons/CSS.png" alt="CSS3 Icon">
+                <h3 class="icons__label">CSS3</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/SCSS.png" alt="SCSS Icon">
-                <h3 class="skills__grid-item-label">SCSS</h3>
+            <div class="icons__item"><img src="./icons/SCSS.png" alt="SCSS Icon">
+                <h3 class="icons__label">SCSS</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/JS.png" alt="Javascript Icon">
-                <h3 class="skills__grid-item-label">Javascript</h3>
+            <div class="icons__item"><img src="./icons/JS.png" alt="Javascript Icon">
+                <h3 class="icons__label">Javascript</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/BEM.png" alt="BEM Icon">
-                <h3 class="skills__grid-item-label">BEM</h3>
+            <div class="icons__item"><img src="./icons/BEM.png" alt="BEM Icon">
+                <h3 class="icons__label">BEM</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/Recat.png" alt="React Icon">
-                <h3 class="skills__grid-item-label">React</h3>
+            <div class="icons__item"><img src="./icons/Recat.png" alt="React Icon">
+                <h3 class="icons__label">React</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/Java.png" alt="Java Icon">
-                <h3 class="skills__grid-item-label">Java</h3>
+            <div class="icons__item"><img src="./icons/Java.png" alt="Java Icon">
+                <h3 class="icons__label">Java</h3>
             </div>
-            <div class="skills__grid-item"><img src="./icons/Spring.png" alt="Spring Boot Icon">
-                <h3 class="skills__grid-item-label">Spring Boot</h3>
+            <div class="icons__item"><img src="./icons/Spring.png" alt="Spring Boot Icon">
+                <h3 class="icons__label">Spring Boot</h3>
             </div>
         </div>
     </div>
+<!-- block -->
+        <h2 id="my-work" class="projects__title">My Projects</h2>
+<!-- block -->
 
-    <div id="my-work" class="projects__grid">
-        <h2 class="projects__grid-title">My Projects</h2>
-        <div class="projects__grid-item-header">
-            <img class="projects__grid-item-header-img" src="./imgs/testImage.png" alt="print screen of client Project">
+    <div class="card">
+        <div id="Client" class="card__img-holder">
+            <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
         </div>
-        <div class="grid__content">
-        <h3 class="grid__content-item-subtitle">React</h3>
-        <h2 class="grid__content-item-title">Client Project</h2>
-        <p class="grid__content-item-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
+        <div class="card__content">
+        <h3 class="card__subtitle">React</h3>
+        <h2 class="card__title">Client Project</h2>
+        <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
             dolore
             quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
             est
             illo harum cumque.</p>
         </div>
-        <button class="project__grid-button">Code<img class="project__grid-button-img" src="" alt=""></button>
-        <img class="project__grid-icon" src="icons/CodeEndTag.png" alt="">
-        <button class="project__grid-button">Preview</button>
-        <img class="project__grid-icon" src="./icons/eyeIcon.webp" alt="">
+        <button class="card__button">Code
+        <img class="card__icon" src="icons/CodeEndTag.png" alt=""></button>
+        <button class="card__button">Preview
+        <img class="card__icon" src="./icons/eyeIcon.webp" alt=""></button>
     </div>
-    <div class="grid-my-projects__rest-api">
-        <img class="projects__grid-item-img" src="" alt="print screen of Rest API">
-        <h2>Rest API</h2>
-        <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero dolore
-            quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
-            est
-            illo harum cumque.</p>
-    </div>
-    <div class="grid-my-projects__punk-api">
-        <img class="projects__grid-item-img" src="" alt="print screen of punk API">
-        <h2>Punk API</h2>
-        <p class="project-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero dolore
-            quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
-            est
-            illo harum cumque.</p>
-    </div>
-    </div>
-
-    <div class="about-me">
-        <h2>About Me</h2>
-        <img src="" alt="Photo of Sam Pridmore">
-        <p class="about-me__paragraph"></p>
-    </div>
+<!-- block -->
 
     <footer>
         <img src="" alt="Git Hub Icon" class="my-socials">

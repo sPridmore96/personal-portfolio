@@ -1,8 +1,14 @@
 @use "./variables" as *;
+@use "./mixins" as *;
 
-.primary-color-button {
+.wide-button {
+    @include WidthHeight (321px, 78px);
     background-color: $primary-color;
     border-radius: 5px;
     margin: 4rem 0 2rem 0;
     font-weight: 700;
+}
+
+.iconTextButton {
+    
 }

@@ -19,31 +19,25 @@
 }
 
 @mixin midSizePhoto {
-    width: 250px;
+    width: 325px;
     
 }
 
-@mixin largeHeader {
+@mixin headerSizeWeight ($size:3.5rem, $weight:600)  {
     font-family: $main-font;
-    font-weight: 600;
-    font-size: 3.5rem;
+    color: $secondary-color;
+    font-size: $size;    
+    font-weight: $weight;
+        
+    }
+
+@mixin smallFontSizeWeightColor ($size:1rem, $weight:400, $color:$faded-grey) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $size;
 }
 
-@mixin medHeader {
-    font-family: $main-font;
-    font-weight: 600;
-    font-size: 1.5rem; 
-}
-
-@mixin smallHeader {
-    color: $primary-color;
-    font-family: $main-font;
-    font-weight:800;
-    font-size: 1em;
-}
-
-@mixin smallFont {
-    color: $faded-grey;
-    font-weight: 500;
-    font-size: 0.8rem;
+@mixin WidthHeight ($width, $height) {
+    width : $width;
+    height : $height;
 }
