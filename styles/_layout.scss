@@ -96,14 +96,8 @@ body {
         text-align: center;
         margin: 0 2rem 3rem 2rem;
         @include headerSizeWeight (2rem,600)
-
 }
 
-// #client {
-//     :hover {
-//         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-//     }
-// }
 
 .card{
     width: 24rem;
@@ -113,6 +107,10 @@ body {
 
     &__holder {
         padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    }    
+
+    &__holder:hover {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }    
     
 
@@ -178,6 +176,7 @@ body {
         @include WidthHeight (275px, 20rem);
         position: absolute;
         border-radius: 10px;
+        object-fit: cover;
     }
 
     &__icons {

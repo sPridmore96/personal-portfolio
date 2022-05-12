@@ -154,6 +154,9 @@ body {
 .card__holder {
   padding: 0.7rem 0.5rem 0.7rem 0.5rem;
 }
+.card__holder:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .card__img-holder {
   display: flex;
   margin: auto;
@@ -230,6 +233,8 @@ body {
   height: 20rem;
   position: absolute;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about__icons--finger {
   position: relative;
