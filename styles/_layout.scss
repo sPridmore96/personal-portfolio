@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    @include flexRowCenter();
+    @include flexRowCenterJustify();
     margin: 2rem 0 5rem 0;
 
     &__my-name {
@@ -16,12 +16,12 @@ body {
     }
 
     &__left-icon {
-        @include smallIconSizing ();
+        @include smallIconSizingWidthHeight ();
         margin-right: 0.3rem
     }
 
     &__right-icon {
-        @include smallIconSizing ();
+        @include smallIconSizingWidthHeight ();
         margin-left: 7.2rem;
     }
 }
@@ -41,7 +41,7 @@ body {
     }
 
     &__work-link {
-        @include flexRowCenter();
+        @include flexRowCenterJustify();
         text-align: left;
         @include smallFontSizeWeightColor(1.2rem, 700, $secondary-color);
 
@@ -50,7 +50,7 @@ body {
             
 
             img {
-                @include smallIconSizing();
+                @include smallIconSizingWidthHeight();
                 margin: 0.1rem 0 0 1rem
             }
         }
@@ -99,24 +99,34 @@ body {
 
 }
 
+// #client {
+//     :hover {
+//         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+//     }
+// }
+
 .card{
     width: 24rem;
-    border: solid black 2px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
+
+    &__holder {
+        padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+    }    
     
+
     &__img-holder {
         display: flex;
         margin: auto;
         justify-content: center;
         width: 350px;
         padding: 3rem 0.3rem 0 0.3rem;
-        background-color: $primary-color;
+        background-color: $lighter-blue;
     }
     &__img {
-        @include midSizePhoto();
-        border-radius: 5px;
+        @include WidthHeight (325px, auto);
+        border-radius: 5px 5px 0 0;
         background-color: white;
     }
     &__content {
@@ -124,7 +134,8 @@ body {
         margin: auto;
     }
     &__subtitle {
-        @include smallFontSizeWeightColor (1rem, 700, $primary-color )
+        @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
+        margin: 2rem 0 0.5rem 0;
     }
     &__title {
         @include headerSizeWeight(2rem, 600);
@@ -133,10 +144,76 @@ body {
     &__info {
      @include smallFontSizeWeightColor ();
     }
-    &__button {
+      
+    &__buttons {
+        @include flexRowCenterJustify (flex-start);
+        margin: 2rem 0 1rem 0;
+    }
+
+    &__icon {
+        @include smallIconSizingWidthHeight (20px, auto);
+
+        &--bigger{
+            @include smallIconSizingWidthHeight (35px, auto);
+        }
+    }
+}
+
+.about {
+    margin-top: 7rem;
+    @include flexColumnCenter ();
+    
+
+    &__img-container {
+        @include WidthHeight (275px, 20rem);
+    }
+
+    &__title {
+        @include headerSizeWeight (2.5rem, 600);
+        margin-bottom: 4rem;
 
     }
-    // &__icon {
 
-    // }
+    &__profile-img {
+        @include WidthHeight (275px, 20rem);
+        position: absolute;
+        border-radius: 10px;
+    }
+
+    &__icons {
+
+        &--finger{
+            position: relative;
+            right: 15%;
+            top: -15%
+        }
+        &--squig {
+            position: relative;
+            left: 40%;
+            top: 55%;
+            overflow: hidden;
+        }
+    }
+    &__paragraph{
+
+        margin-top: 3rem;
+        @include WidthHeight (275px, auto);
+    }
+}
+
+.footer {
+    width: auto;
+    padding: 5rem 2rem 4rem 2rem ;
+    height: 5rem;
+    background-color: $secondary-color;
+    text-align: center;
+    
+    &__icon {
+        padding: 0 1rem 0 1rem;
+        @include smallIconSizingWidthHeight ();
+    }
+    &__email{
+        @include headerSizeWeight (3rem 600);
+        color: white
+    }
 }

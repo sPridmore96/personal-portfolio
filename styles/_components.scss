@@ -9,6 +9,10 @@
     font-weight: 700;
 }
 
-.iconTextButton {
-    
+.smallButton {
+
+    @include WidthHeight (110px, 30px);
+    background-color: white;
+    @include flexRowCenterJustify (space-evenly);
+    border: none;
 }

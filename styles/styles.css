@@ -7,10 +7,20 @@
 .wide-button {
   width: 321px;
   height: 78px;
-  background-color: #E3F6F5;
+  background-color: #BAE8E8;
   border-radius: 5px;
   margin: 4rem 0 2rem 0;
   font-weight: 700;
+}
+
+.smallButton {
+  width: 110px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
 }
 
 body {
@@ -36,12 +46,12 @@ body {
 }
 .header__left-icon {
   width: 30px;
-  height: 30px;
+  height: auto;
   margin-right: 0.3rem;
 }
 .header__right-icon {
   width: 30px;
-  height: 30px;
+  height: auto;
   margin-left: 7.2rem;
 }
 
@@ -56,6 +66,7 @@ body {
   color: grey;
   font-weight: 400;
   font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
   margin: 0 0 0.5rem -7rem;
 }
 .welcome__job-discription {
@@ -73,13 +84,14 @@ body {
   color: #272643;
   font-weight: 700;
   font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
 }
 .welcome__work-link a {
   text-decoration: none;
 }
 .welcome__work-link a img {
   width: 30px;
-  height: 30px;
+  height: auto;
   margin: 0.1rem 0 0 1rem;
 }
 
@@ -120,6 +132,7 @@ body {
   color: grey;
   font-weight: 500;
   font-size: 1rem;
+  font-family: "Inter", sans-serif;
   margin-top: 0.7rem;
 }
 
@@ -134,10 +147,12 @@ body {
 
 .card {
   width: 24rem;
-  border: solid black 2px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
+}
+.card__holder {
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
 }
 .card__img-holder {
   display: flex;
@@ -149,7 +164,8 @@ body {
 }
 .card__img {
   width: 325px;
-  border-radius: 5px;
+  height: auto;
+  border-radius: 5px 5px 0 0;
   background-color: white;
 }
 .card__content {
@@ -157,9 +173,11 @@ body {
   margin: auto;
 }
 .card__subtitle {
-  color: #E3F6F5;
+  color: #BAE8E8;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  margin: 2rem 0 0.5rem 0;
 }
 .card__title {
   font-family: "Inter", sans-serif;
@@ -172,4 +190,80 @@ body {
   color: grey;
   font-weight: 400;
   font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+.card__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem 0 1rem 0;
+}
+.card__icon {
+  width: 20px;
+  height: auto;
+}
+.card__icon--bigger {
+  width: 35px;
+  height: auto;
+}
+
+.about {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about__img-container {
+  width: 275px;
+  height: 20rem;
+}
+.about__title {
+  font-family: "Inter", sans-serif;
+  color: #272643;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.about__profile-img {
+  width: 275px;
+  height: 20rem;
+  position: absolute;
+  border-radius: 10px;
+}
+.about__icons--finger {
+  position: relative;
+  right: 15%;
+  top: -15%;
+}
+.about__icons--squig {
+  position: relative;
+  left: 40%;
+  top: 55%;
+  overflow: hidden;
+}
+.about__paragraph {
+  margin-top: 3rem;
+  width: 275px;
+  height: auto;
+}
+
+.footer {
+  width: auto;
+  padding: 5rem 2rem 4rem 2rem;
+  height: 5rem;
+  background-color: #272643;
+  text-align: center;
+}
+.footer__icon {
+  padding: 0 1rem 0 1rem;
+  width: 30px;
+  height: auto;
+}
+.footer__email {
+  font-family: "Inter", sans-serif;
+  color: #272643;
+  font-size: 3rem 600;
+  font-weight: 600;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */
