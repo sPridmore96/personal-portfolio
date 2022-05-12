@@ -8,7 +8,7 @@ body {
 
 .header {
     @include flexRowCenter();
-    margin-bottom: 5rem;
+    margin: 2rem 0 5rem 0;
 
     &__my-name {
         display: inline;
