@@ -1,232 +1,458 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
-body {
-    width: 100%;
-    height: 100%;
-    @include flexColumnCenter;
-    flex-wrap: wrap;
-}
+// body {
+//     width: 100%;
+//     height: 100%;
+//     @include flexColumnCenter;
+//     flex-wrap: wrap;
+// }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+// body::-webkit-scrollbar {
+//     display: none;
+// }
 
-.header {
-    @include flexRowCenterJustify();
-    margin: 2rem 0 5rem 0;
+// .header {
+//     @include flexRowCenterJustify();
+//     margin: 2rem 0 5rem 0;
 
-    &__my-name {
-        display: inline;
-        @include headerSizeWeight(1.5rem,7000)
-    }
+//     &__my-name {
+//         display: inline;
+//         @include headerSizeWeight(1.5rem,7000)
+//     }
 
-    &__left-icon {
-        @include smallIconSizingWidthHeight ();
-        margin-right: 0.3rem
-    }
+//     &__left-icon {
+//         @include smallIconSizingWidthHeight ();
+//         margin-right: 0.3rem
+//     }
 
-    &__right-icon {
-        @include smallIconSizingWidthHeight ();
-        margin-left: 7.2rem;
-    }
-}
+//     &__right-icon {
+//         @include smallIconSizingWidthHeight ();
+//         margin-left: 7.2rem;
+//     }
+// }
 
-.welcome {
-    width: 80%;
-    @include flexColumnCenter();
+// .welcome {
+//     width: 80%;
+//     @include flexColumnCenter();
 
-    &__message {
-        @include smallFontSizeWeightColor(1.3rem,400);
-        margin: 0 0 0.5rem -7rem;
-    }
+//     &__message {
+//         @include smallFontSizeWeightColor(1.3rem,400);
+//         margin: 0 0 0.5rem -7rem;
+//     }
 
-    &__job-discription {
-        @include headerSizeWeight();
-        color: $secondary-color;
-    }
+//     &__job-discription {
+//         @include headerSizeWeight();
+//         color: $secondary-color;
+//     }
 
-    &__work-link {
-        @include flexRowCenterJustify();
-        text-align: left;
-        @include smallFontSizeWeightColor(1.2rem, 700, $secondary-color);
+//     &__work-link {
+//         @include flexRowCenterJustify();
+//         text-align: left;
+//         @include smallFontSizeWeightColor(1.2rem, 700, $secondary-color);
 
-        a {
-            text-decoration: none;
+//         a {
+//             text-decoration: none;
             
 
-            img {
-                @include smallIconSizingWidthHeight();
-                margin: 0.1rem 0 0 1rem
+//             img {
+//                 @include smallIconSizingWidthHeight();
+//                 margin: 0.1rem 0 0 1rem
+//             }
+//         }
+//     }
+// }
+
+// .skills {
+//     @include flexColumnCenter();
+//     margin: 3rem 0 3rem 0;
+
+//     &__header {
+//         text-align: center;
+//     }
+//     &__title {
+//         @include headerSizeWeight(2rem,600);
+//         margin-bottom: 4rem;
+//     }
+
+//     &__subtitle {
+//         display: none;
+//     }
+// }
+
+// .icons {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-gap: 2rem;
+//     margin-bottom: 5rem;
+
+//     &__item {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         align-items: center;
+//     }
+//     &__label {
+//         @include smallFontSizeWeightColor (1rem, 500);
+//         margin-top: 0.7rem;
+//     }
+// }
+
+// .projects__title {
+//         text-align: center;
+//         margin: 0 2rem 3rem 2rem;
+//         @include headerSizeWeight (2rem,600)
+// }
+
+
+// .card{
+//     width: auto;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-gap: 3rem;
+    
+
+    
+
+//     &__holder {
+//         padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+//         opacity: 0.5;
+//         margin-left: 0.9%;
+//     }    
+
+//     &__holder:hover {
+//         box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 3px 3px;
+//         opacity: 1.0;
+//         margin: 2%;
+//     }    
+    
+
+//     &__img-holder {
+//         display: flex;
+//         margin: auto;
+//         justify-content: center;
+//         width: auto;
+//         padding: 3rem 0.3rem 0 0.3rem;
+//         background-color: $lighter-blue;
+//     }
+//     &__img {
+//         @include WidthHeight (325px, auto);
+//         border-radius: 5px 5px 0 0;
+//         background-color: white;
+//     }
+//     &__content {
+//         width: 350px;
+//         margin: auto;
+//     }
+//     &__subtitle {
+//         @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
+//         margin: 2rem 0 0.5rem 0;
+//     }
+//     &__title {
+//         @include headerSizeWeight(2rem, 600);
+//         margin-bottom: 1rem;
+//     }
+//     &__info {
+//      @include smallFontSizeWeightColor ();
+//     }
+      
+//     &__buttons {
+//         @include flexRowCenterJustify (flex-start);
+//         margin: 2rem 0 1rem 0;
+//     }
+
+//     &__icon {
+//         @include smallIconSizingWidthHeight (20px, auto);
+
+//         &--bigger{
+//             @include smallIconSizingWidthHeight (35px, auto);
+//         }
+//     }
+// }
+
+// .about {
+//    display: grid;
+//    margin: 7rem 0 3rem 0;
+
+//     &__img-container {
+//         @include WidthHeight (275px, 20rem);
+//     }
+
+//     &__title {
+//         @include headerSizeWeight (2.5rem, 600);
+//         margin-bottom: 4rem;
+
+//     }
+
+//     &__profile-img {
+//         @include WidthHeight (275px, 20rem);
+//         position: absolute;
+//         border-radius: 10px;
+//         object-fit: cover;
+//     }
+
+//     &__icons {
+
+//         &--finger{
+//             position: relative;
+//             right: 15%;
+//             top: -15%
+//         }
+//         &--squig {
+//             position: relative;
+//             left: 40%;
+//             top: 55%;
+//             overflow: hidden;
+//         }
+//     }
+//     &__paragraph{
+//         @include WidthHeight (275px, auto);
+//         margin-top: 3rem;
+//     }
+// }
+
+// .footer {
+//     width: auto;
+//     height: 7rem;
+//     background-color: $secondary-color;
+//     text-align: center;
+//     padding: 1rem 2rem 0 2rem;
+    
+//     &__icon {
+//         @include smallIconSizingWidthHeight ();
+//     }
+//     &__email{
+//         @include headerSizeWeight (3rem 600);
+//         color: white
+//     }
+// }
+
+@media screen and (max-width:320px) {
+    body {
+        width: 100%;
+        height: 100%;
+        @include flexColumnCenter;
+        flex-wrap: wrap;
+    }
+    
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .header {
+        @include flexRowCenterJustify();
+        margin: 2rem 0 5rem 0;
+    
+        &__my-name {
+            display: inline;
+            @include headerSizeWeight(1.5rem,7000)
+        }
+    
+        &__left-icon {
+            @include smallIconSizingWidthHeight ();
+            margin-right: 0.3rem
+        }
+    
+        &__right-icon {
+            @include smallIconSizingWidthHeight ();
+            margin-left: 7.2rem;
+        }
+    }
+    
+    .welcome {
+        width: 80%;
+        @include flexColumnCenter();
+    
+        &__message {
+            @include smallFontSizeWeightColor(1.3rem,400);
+            margin: 0 0 0.5rem -7rem;
+        }
+    
+        &__job-discription {
+            @include headerSizeWeight();
+            color: $secondary-color;
+        }
+    
+        &__work-link {
+            @include flexRowCenterJustify();
+            text-align: left;
+            @include smallFontSizeWeightColor(1.2rem, 700, $secondary-color);
+    
+            a {
+                text-decoration: none;
+                
+    
+                img {
+                    @include smallIconSizingWidthHeight();
+                    margin: 0.1rem 0 0 1rem
+                }
             }
         }
     }
-}
-
-.skills {
-    @include flexColumnCenter();
-    margin: 3rem 0 3rem 0;
-
-    &__header {
-        text-align: center;
-    }
-    &__title {
-        @include headerSizeWeight(2rem,600);
-        margin-bottom: 4rem;
-    }
-
-    &__subtitle {
-        display: none;
-    }
-}
-
-.icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2rem;
-    margin-bottom: 5rem;
-
-    &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__label {
-        @include smallFontSizeWeightColor (1rem, 500);
-        margin-top: 0.7rem;
-    }
-}
-
-.projects__title {
-        text-align: center;
-        margin: 0 2rem 3rem 2rem;
-        @include headerSizeWeight (2rem,600)
-}
-
-
-.card{
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 3rem;
     
-
+    .skills {
+        @include flexColumnCenter();
+        margin: 3rem 0 3rem 0;
     
-
-    &__holder {
-        padding: 0.7rem 0.5rem 0.7rem 0.5rem;
-        opacity: 0.5;
-        margin-left: 0.9%;
-    }    
-
-    &__holder:hover {
-        box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 3px 3px;
-        opacity: 1.0;
-        margin: 2%;
-    }    
+        &__header {
+            text-align: center;
+        }
+        &__title {
+            @include headerSizeWeight(2rem,600);
+            margin-bottom: 4rem;
+        }
     
-
-    &__img-holder {
-        display: flex;
-        margin: auto;
-        justify-content: center;
+        &__subtitle {
+            display: none;
+        }
+    }
+    
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        margin-bottom: 5rem;
+    
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__label {
+            @include smallFontSizeWeightColor (1rem, 500);
+            margin-top: 0.7rem;
+        }
+    }
+    
+    .projects__title {
+            text-align: center;
+            margin: 0 2rem 3rem 2rem;
+            @include headerSizeWeight (2rem,600)
+    }
+    
+    
+    .card{
         width: auto;
-        padding: 3rem 0.3rem 0 0.3rem;
-        background-color: $lighter-blue;
-    }
-    &__img {
-        @include WidthHeight (325px, auto);
-        border-radius: 5px 5px 0 0;
-        background-color: white;
-    }
-    &__content {
-        width: 350px;
-        margin: auto;
-    }
-    &__subtitle {
-        @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
-        margin: 2rem 0 0.5rem 0;
-    }
-    &__title {
-        @include headerSizeWeight(2rem, 600);
-        margin-bottom: 1rem;
-    }
-    &__info {
-     @include smallFontSizeWeightColor ();
-    }
-      
-    &__buttons {
-        @include flexRowCenterJustify (flex-start);
-        margin: 2rem 0 1rem 0;
-    }
-
-    &__icon {
-        @include smallIconSizingWidthHeight (20px, auto);
-
-        &--bigger{
-            @include smallIconSizingWidthHeight (35px, auto);
-        }
-    }
-}
-
-.about {
-   display: grid;
-   margin: 7rem 0 3rem 0;
-
-    &__img-container {
-        @include WidthHeight (275px, 20rem);
-    }
-
-    &__title {
-        @include headerSizeWeight (2.5rem, 600);
-        margin-bottom: 4rem;
-
-    }
-
-    &__profile-img {
-        @include WidthHeight (275px, 20rem);
-        position: absolute;
-        border-radius: 10px;
-        object-fit: cover;
-    }
-
-    &__icons {
-
-        &--finger{
-            position: relative;
-            right: 15%;
-            top: -15%
-        }
-        &--squig {
-            position: relative;
-            left: 40%;
-            top: 55%;
-            overflow: hidden;
-        }
-    }
-    &__paragraph{
-        @include WidthHeight (275px, auto);
-        margin-top: 3rem;
-    }
-}
-
-.footer {
-    width: auto;
-    height: 7rem;
-    background-color: $secondary-color;
-    text-align: center;
-    padding: 1rem 2rem 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+        
     
-    &__icon {
-        @include smallIconSizingWidthHeight ();
-    }
-    &__email{
-        @include headerSizeWeight (3rem 600);
-        color: white
-    }
-}
-
-// @media screen and (max-width:) {
+        
     
-// }
+        &__holder {
+            padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+            opacity: 0.5;
+            margin-left: 5%;
+        }    
+    
+        &__holder:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 3px 3px;
+            opacity: 1.0;
+            margin-left: 6%;
+        }    
+        
+    
+        &__img-holder {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            width: auto;
+            padding: 3rem 0.3rem 0 0.3rem;
+            background-color: $lighter-blue;
+        }
+        &__img {
+            @include WidthHeight (300px, auto);
+            border-radius: 5px 5px 0 0;
+            background-color: white;
+        }
+        &__content {
+            width: 350px;
+            margin: auto;
+        }
+        &__subtitle {
+            @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
+            margin: 2rem 0 0.5rem 0;
+        }
+        &__title {
+            @include headerSizeWeight(2rem, 600);
+            margin-bottom: 1rem;
+        }
+        &__info {
+            padding : 0 1rem 0 0;
+         @include smallFontSizeWeightColor ();
+        }
+          
+        &__buttons {
+            @include flexRowCenterJustify (flex-start);
+            margin: 2rem 0 1rem 0;
+        }
+    
+        &__icon {
+            @include smallIconSizingWidthHeight (20px, auto);
+    
+            &--bigger{
+                @include smallIconSizingWidthHeight (35px, auto);
+            }
+        }
+    }
+    
+    .about {
+       display: grid;
+       margin: 7rem 0 3rem 0;
+    
+        &__img-container {
+            @include WidthHeight (275px, 20rem);
+        }
+    
+        &__title {
+            @include headerSizeWeight (2.5rem, 600);
+            margin-bottom: 4rem;
+    
+        }
+    
+        &__profile-img {
+            @include WidthHeight (275px, 20rem);
+            position: absolute;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    
+        &__icons {
+    
+            &--finger{
+                position: relative;
+                right: 15%;
+                top: -15%
+            }
+            &--squig {
+                position: relative;
+                left: 40%;
+                top: 55%;
+                overflow: hidden;
+            }
+        }
+        &__paragraph{
+            @include WidthHeight (275px, auto);
+            margin-top: 3rem;
+        }
+    }
+    
+    .footer {
+        width: auto;
+        height: 7rem;
+        background-color: $secondary-color;
+        text-align: center;
+        padding: 1rem 2rem 0 2rem;
+        
+        &__icon {
+            @include smallIconSizingWidthHeight ();
+        }
+        &__email{
+            @include headerSizeWeight (3rem 600);
+            color: white
+        }
+    }
+    
+}
