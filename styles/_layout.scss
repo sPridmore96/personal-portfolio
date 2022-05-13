@@ -203,6 +203,7 @@ body::-webkit-scrollbar {
 }
 
 .about {
+        @include WidthHeight (90%,auto);
         margin-top: 10rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -216,11 +217,16 @@ body::-webkit-scrollbar {
       
 
     &__img-container {
-        @include WidthHeight (300px, auto);
+        @include WidthHeight (auto,auto);
         grid-area: __img-container;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     &__title {
+        padding-top: 4rem;
         @include headerSizeWeight (2.5rem, 600);
         text-align: center;
         grid-area: __title;
@@ -228,41 +234,46 @@ body::-webkit-scrollbar {
     }
 
     &__profile-img {
-        @include WidthHeight (275px, 20rem);
+        @include WidthHeight (auto, auto);
         position: absolute;
         border-radius: 10px;
-        object-fit: cover;
     }
 
     &__icons {
 
         &--finger {
+            @include WidthHeight(90px,auto);
             position: relative;
-            right: 15%;
-            top: -15%
+            right: 23%;
+            top: -25%
         }
 
         &--squig {
             position: relative;
-            left: 40%;
-            top: 55%;
+            left: 30%;
+            top: 15%;
             overflow: hidden;
         }
     }
 
     &__paragraph {
         @include WidthHeight (90%, 350px);
+        @include smallFontSizeWeightColor();
         margin-top: 3rem;
         grid-area: __paragraph;
     }
 }
 
 .footer {
-    width: auto;
+    width: 100%;
     height: 7rem;
     background-color: $secondary-color;
     text-align: center;
     padding: 1rem 2rem 0 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 
     &__icon {
         @include smallIconSizingWidthHeight ();
@@ -270,17 +281,17 @@ body::-webkit-scrollbar {
 
     &__email {
         @include headerSizeWeight (3rem 600);
-        color: white
+        color: white;
+        padding-bottom: 1rem;
     }
 }
 
-
 // -------------------------------------------------------------------------------
 
 
 // -------------------------------------------------------------------------------
 
-@media screen and (max-width:768px) and (hover:none) {
+@media screen and (max-width:320px) {
     body {
         width: 98vw;
         height: 100%;
@@ -475,7 +486,12 @@ body::-webkit-scrollbar {
 
     .about {
         display: grid;
-        grid-template-areas: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "__title"
+        "__img-container"  
+        "__paragraph";
         margin: 7rem 0 3rem 0;
 
         &__img-container {
@@ -483,6 +499,7 @@ body::-webkit-scrollbar {
         }
 
         &__title {
+            padding: 0;
             @include headerSizeWeight (2.5rem, 600);
             margin-bottom: 4rem;
 
@@ -499,14 +516,14 @@ body::-webkit-scrollbar {
 
             &--finger {
                 position: relative;
-                right: 15%;
-                top: -15%
+                right: 23%;
+                top: -50%
             }
 
             &--squig {
                 position: relative;
-                left: 40%;
-                top: 55%;
+                left: 30%;
+                top: 35%;
                 overflow: hidden;
             }
         }
@@ -523,6 +540,7 @@ body::-webkit-scrollbar {
         background-color: $secondary-color;
         text-align: center;
         padding: 1rem 2rem 0 2rem;
+        flex-direction: column;
 
         &__icon {
             @include smallIconSizingWidthHeight ();

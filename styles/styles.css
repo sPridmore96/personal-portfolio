@@ -256,6 +256,8 @@ body::-webkit-scrollbar {
 }
 
 .about {
+  width: 90%;
+  height: auto;
   margin-top: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -264,11 +266,15 @@ body::-webkit-scrollbar {
   grid-template-areas: "__title __title __title __img-container" "__paragraph __paragraph __paragraph __img-container" "__paragraph __paragraph __paragraph __img-container";
 }
 .about__img-container {
-  width: 300px;
+  width: auto;
   height: auto;
   grid-area: __img-container;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about__title {
+  padding-top: 4rem;
   font-family: "Inter", sans-serif;
   color: #272643;
   font-size: 2.5rem;
@@ -277,37 +283,45 @@ body::-webkit-scrollbar {
   grid-area: __title;
 }
 .about__profile-img {
-  width: 275px;
-  height: 20rem;
+  width: auto;
+  height: auto;
   position: absolute;
   border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .about__icons--finger {
+  width: 90px;
+  height: auto;
   position: relative;
-  right: 15%;
-  top: -15%;
+  right: 23%;
+  top: -25%;
 }
 .about__icons--squig {
   position: relative;
-  left: 40%;
-  top: 55%;
+  left: 30%;
+  top: 15%;
   overflow: hidden;
 }
 .about__paragraph {
   width: 90%;
   height: 350px;
+  color: grey;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
   margin-top: 3rem;
   grid-area: __paragraph;
 }
 
 .footer {
-  width: auto;
+  width: 100%;
   height: 7rem;
   background-color: #272643;
   text-align: center;
   padding: 1rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__icon {
   width: 30px;
@@ -319,9 +333,10 @@ body::-webkit-scrollbar {
   font-size: 3rem 600;
   font-weight: 600;
   color: white;
+  padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 768px) and (hover: none) {
+@media screen and (max-width: 320px) {
   body {
     width: 98vw;
     height: 100%;
@@ -536,7 +551,9 @@ body::-webkit-scrollbar {
 
   .about {
     display: grid;
-    grid-template-areas: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "__title" "__img-container" "__paragraph";
     margin: 7rem 0 3rem 0;
   }
   .about__img-container {
@@ -544,6 +561,7 @@ body::-webkit-scrollbar {
     height: 20rem;
   }
   .about__title {
+    padding: 0;
     font-family: "Inter", sans-serif;
     color: #272643;
     font-size: 2.5rem;
@@ -560,13 +578,13 @@ body::-webkit-scrollbar {
   }
   .about__icons--finger {
     position: relative;
-    right: 15%;
-    top: -15%;
+    right: 23%;
+    top: -50%;
   }
   .about__icons--squig {
     position: relative;
-    left: 40%;
-    top: 55%;
+    left: 30%;
+    top: 35%;
     overflow: hidden;
   }
   .about__paragraph {
@@ -581,6 +599,7 @@ body::-webkit-scrollbar {
     background-color: #272643;
     text-align: center;
     padding: 1rem 2rem 0 2rem;
+    flex-direction: column;
   }
   .footer__icon {
     width: 30px;
