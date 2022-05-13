@@ -34,9 +34,9 @@
   background-color: white;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 1024px) {
   body {
-    width: 96vw;
+    width: 98vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -275,7 +275,7 @@
     align-items: center;
   }
   .about__title {
-    padding-top: 4rem;
+    padding-top: 7rem;
     font-family: "Inter", sans-serif;
     color: #272643;
     font-size: 2.5rem;
@@ -551,13 +551,12 @@
   }
 
   .about {
-    margin: auto;
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 2fr;
     grid-template-areas: "__title" "__img-container" "__paragraph";
-    margin: 7rem 0 3rem 0;
+    margin: 0 auto 3rem auto;
   }
   .about__img-container {
     width: auto;
@@ -566,13 +565,12 @@
   }
   .about__title {
     text-align: center;
-    margin-top: 5rem;
     font-family: "Inter", sans-serif;
     color: #272643;
     font-size: 2.5rem;
     font-weight: 600;
     margin-top: 1rem;
-    padding-top: 5rem;
+    padding-top: 7rem;
     grid-area: __title;
   }
   .about__profile-img {
@@ -585,13 +583,13 @@
   }
   .about__icons--finger {
     position: relative;
-    right: 15%;
+    right: 10%;
     top: -15%;
   }
   .about__icons--squig {
     position: relative;
-    left: 40%;
-    top: 60%;
+    left: 25%;
+    top: 50%;
     overflow: hidden;
   }
   .about__paragraph {
