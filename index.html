@@ -13,13 +13,13 @@
     <div class="header">
         <img class="header__left-icon" src="./icons/CodeEndTag.png" alt="closing tag coding Icon">
         <h1 class="header__my-name">Sam Pridmore</h1>
-        <img class="header__right-icon" src="./icons/imagesmenu.png" alt="drop down menu">
+        <img tabindex="1" class="header__right-icon" src="./icons/imagesmenu.png" alt="drop down menu">
     </div>
     <!-- block -->
     <div class="welcome">
         <p class="welcome__message">Hi! I'm Sam Pridmore</p>
         <p class="welcome__job-discription">A Junior <br> Software <br> Developer <br> Based In <br> The UK.</p>
-        <button class="welcome__work-link wide-button">Take a look at my work <a href="#my-work"><img
+        <button tabindex="2" class="welcome__work-link wide-button">Take a look at my work <a href="#my-work"><img
                     src="./icons/Down_Arrow_Icon.png" alt="Down Arrow"></a> </button>
     </div>
     <!-- block -->
@@ -81,16 +81,16 @@
                     illo harum cumque.</p>
             </div>
             <div class="card__buttons">
-                <button class="smallButton">Code
+                <button tabindex="3" class="smallButton">Code
                     <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
                 </button>
-                <button class="smallButton">Preview
+                <button tabindex="4" class="smallButton">Preview
                     <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
                 </button>
             </div>
         </div>
         <!-- block -->
-        <div id="Rest-API" class="card">
+        <div id="Rest-API">
             <div class="card__holder">
                 <div class="card__img-holder">
                     <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
@@ -106,68 +106,71 @@
                         illo harum cumque.</p>
                 </div>
                 <div class="card__buttons">
-                    <button class="smallButton">Code
+                    <button tabindex="5" class="smallButton">Code
                         <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
                     </button>
-                    <button class="smallButton">Preview
+                    <button tabindex="6" class="smallButton">Preview
                         <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
                     </button>
                 </div>
             </div>
         </div>
-        <!-- block -->
-        <div id="PUNK API" class="card">
-            <div class="card__holder">
-                <div class="card__img-holder">
-                    <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
-                </div>
-                <div class="card__content">
-                    <h3 class="card__subtitle">REACT</h3>
-                    <h2 class="card__title">PUNK API</h2>
-                    <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
-                        dolore
-                        quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa
-                        nam,
-                        est
-                        illo harum cumque.</p>
-                </div>
-                <div class="card__buttons">
-                    <button class="smallButton">Code
-                        <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
-                    </button>
-                    <button class="smallButton">Preview
-                        <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
-                    </button>
+            <!-- block -->
+            <div id="PUNK API">
+                <div class="card__holder">
+                    <div class="card__img-holder">
+                        <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
+                    </div>
+                    <div class="card__content">
+                        <h3 class="card__subtitle">REACT</h3>
+                        <h2 class="card__title">PUNK API</h2>
+                        <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
+                            dolore
+                            quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa
+                            nam,
+                            est
+                            illo harum cumque.</p>
+                    </div>
+                    <div class="card__buttons">
+                        <button tabindex="7" class="smallButton">Code
+                            <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
+                        </button>
+                        <button tabindex="8" class="smallButton">Preview
+                            <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
+                        </button>
+                    </div>
                 </div>
             </div>
+
         </div>
-        <!-- block -->
-        <div class="about">
-            <h4 class="about__title">About Me</h4>
-            <div class="about__img-container">
-                <img src="./imgs/googleProfileImg.webp" alt="" class="about__profile-img">
-                <img class="about__icons--finger" src="./icons/Frame 14.svg" alt="">
-                <img class="about__icons--squig" src="./icons/squiggles.svg" alt="">
-            </div>
-            <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, earum et
-                dolores, placeat itaque aliquam nobis ipsam officia quod corrupti porro voluptatem? Accusamus
-                excepturi quas minus expedita nesciunt possimus repellendus? Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Possimus, veniam eaque? Unde laboriosam pariatur repellendus. Illum rerum dolore
-                eaque repellendus doloribus possimus incidunt suscipit dignissimos, aspernatur vero blanditiis est
-                aliquam! <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, earum et
-                dolores, placeat itaque aliquam nobis ipsam officia quod corrupti porro voluptatem? Accusamus
-                excepturi quas minus expedita nesciunt possimus repellendus? Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit. Possimus, veniam eaque? Unde laboriosam pariatur repellendus. Illum rerum dolore
-                eaque repellendus doloribus possimus incidunt suscipit dignissimos, aspernatur vero blanditiis est
-                aliquam! </p>
+    </div>
+    <!-- block -->
+    <div class="about">
+        <h4 class="about__title">About Me</h4>
+        <div class="about__img-container">
+            <img src="./imgs/googleProfileImg.webp" alt="" class="about__profile-img">
+            <img class="about__icons--finger" src="./icons/Frame 14.svg" alt="">
+            <img class="about__icons--squig" src="./icons/squiggles.svg" alt="">
         </div>
-        <!-- block -->
-        <footer class="footer">
-            <img class="footer_icon" src="./icons/Group 61.svg" alt="Git Hub Icon">
-            <img class="footer_icon" src="./icons/Group 60.svg" alt="Indeed Icon">
-            <img class="footer_icon" src="./icons/Group 39808.svg" alt="CV Icon">
-            <h2 class="footer__email">Spridmore96@gmail.com</h2>
-        </footer>
+        <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, earum et
+            dolores, placeat itaque aliquam nobis ipsam officia quod corrupti porro voluptatem? Accusamus
+            excepturi quas minus expedita nesciunt possimus repellendus? Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Possimus, veniam eaque? Unde laboriosam pariatur repellendus. Illum rerum dolore
+            eaque repellendus doloribus possimus incidunt suscipit dignissimos, aspernatur vero blanditiis est
+            aliquam! <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, earum et
+            dolores, placeat itaque aliquam nobis ipsam officia quod corrupti porro voluptatem? Accusamus
+            excepturi quas minus expedita nesciunt possimus repellendus? Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Possimus, veniam eaque? Unde laboriosam pariatur repellendus. Illum rerum dolore
+            eaque repellendus doloribus possimus incidunt suscipit dignissimos, aspernatur vero blanditiis est
+            aliquam! </p>
+    </div>
+    <!-- block -->
+    <footer class="footer">
+        <a tabindex="9" href="#"><img class="footer_icon" src="./icons/Group 61.svg" alt="Git Hub Icon"></a>
+        <a tabindex="10" href="#"><img class="footer_icon" src="./icons/Group 60.svg" alt="Indeed Icon"></a>
+        <a tabindex="11" href="#"><img class="footer_icon" src="./icons/Group 39808.svg" alt="CV Icon"></a>
+        <h2 class="footer__email">Spridmore96@gmail.com</h2>
+    </footer>
 </body>
 
 </html>

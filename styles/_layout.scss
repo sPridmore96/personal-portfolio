@@ -2,8 +2,14 @@
 @use "./mixins" as *;
 
 body {
-    padding: 0.3rem;
+    width: 100%;
+    height: 100%;
     @include flexColumnCenter;
+    flex-wrap: wrap;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .header {
@@ -100,17 +106,24 @@ body {
 
 
 .card{
-    width: 24rem;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
+    
+
+    
 
     &__holder {
         padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+        opacity: 0.5;
+        margin-left: 0.9%;
     }    
 
     &__holder:hover {
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 3px 3px;
+        opacity: 1.0;
+        margin: 2%;
     }    
     
 
@@ -118,7 +131,7 @@ body {
         display: flex;
         margin: auto;
         justify-content: center;
-        width: 350px;
+        width: auto;
         padding: 3rem 0.3rem 0 0.3rem;
         background-color: $lighter-blue;
     }
@@ -158,9 +171,8 @@ body {
 }
 
 .about {
-    margin-top: 7rem;
-    @include flexColumnCenter ();
-    
+   display: grid;
+   margin: 7rem 0 3rem 0;
 
     &__img-container {
         @include WidthHeight (275px, 20rem);
@@ -194,21 +206,19 @@ body {
         }
     }
     &__paragraph{
-
-        margin-top: 3rem;
         @include WidthHeight (275px, auto);
+        margin-top: 3rem;
     }
 }
 
 .footer {
     width: auto;
-    padding: 5rem 2rem 4rem 2rem ;
-    height: 5rem;
+    height: 7rem;
     background-color: $secondary-color;
     text-align: center;
+    padding: 1rem 2rem 0 2rem;
     
     &__icon {
-        padding: 0 1rem 0 1rem;
         @include smallIconSizingWidthHeight ();
     }
     &__email{
@@ -216,3 +226,7 @@ body {
         color: white
     }
 }
+
+// @media screen and (max-width:) {
+    
+// }
