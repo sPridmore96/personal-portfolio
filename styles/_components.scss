@@ -9,10 +9,24 @@
     font-weight: 700;
 }
 
+
 .smallButton {
 
     @include WidthHeight (110px, 30px);
-    background-color: white;
     @include flexRowCenterJustify (space-evenly);
     border: none;
+
+    &--primary {
+        display: inline;
+        border: black solid 1px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        font-weight: 700;
+        color: black;
+    }
+
+    &--white{
+        background-color: white;
+        
+    }
 }

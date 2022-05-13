@@ -11,14 +11,22 @@
 
 <body>
     <div class="header">
-        <img class="header__left-icon" src="./icons/CodeEndTag.png" alt="closing tag coding Icon">
-        <h1 class="header__my-name">Sam Pridmore</h1>
+        <div class="header__left-side">
+            <img class="header__left-icon" src="./icons/CodeEndTag.png" alt="closing tag coding Icon">
+            <h1 class="header__my-name">Sam Pridmore</h1>
+        </div>
+        <div class="header__links">
+            <a href="#" class="header_link">Home</a>
+            <a href="#" class="header_link">About</a>
+            <a href="#" class="header_link">Projects</a>
+            <button class="smallButton smallButton--primary">Get in Touch</button>
+        </div>
         <img tabindex="1" class="header__right-icon" src="./icons/imagesmenu.png" alt="drop down menu">
     </div>
     <!-- block -->
     <div class="welcome">
         <p class="welcome__message">Hi! I'm Sam Pridmore</p>
-        <p class="welcome__job-discription">A Junior <br> Software <br> Developer <br> Based In <br> The UK.</p>
+        <p class="welcome__job-discription">A Junior Software Developer Based In The UK.</p>
         <button tabindex="2" class="welcome__work-link wide-button">Take a look at my work <a href="#my-work"><img
                     src="./icons/Down_Arrow_Icon.png" alt="Down Arrow"></a> </button>
     </div>
@@ -81,10 +89,10 @@
                     illo harum cumque.</p>
             </div>
             <div class="card__buttons">
-                <button tabindex="3" class="smallButton">Code
+                <button tabindex="3" class="smallButton smallButton--white">Code
                     <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
                 </button>
-                <button tabindex="4" class="smallButton">Preview
+                <button tabindex="4" class="smallButton smallButton--white">Preview
                     <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
                 </button>
             </div>
@@ -106,42 +114,107 @@
                         illo harum cumque.</p>
                 </div>
                 <div class="card__buttons">
-                    <button tabindex="5" class="smallButton">Code
+                    <button tabindex="5" class="smallButton smallButton--white">Code
                         <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
                     </button>
-                    <button tabindex="6" class="smallButton">Preview
+                    <button tabindex="6" class="smallButton smallButton--white">Preview
                         <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
                     </button>
                 </div>
             </div>
         </div>
-            <!-- block -->
-            <div id="PUNK API">
-                <div class="card__holder">
-                    <div class="card__img-holder">
-                        <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
-                    </div>
-                    <div class="card__content">
-                        <h3 class="card__subtitle">REACT</h3>
-                        <h2 class="card__title">PUNK API</h2>
-                        <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
-                            dolore
-                            quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa
-                            nam,
-                            est
-                            illo harum cumque.</p>
-                    </div>
-                    <div class="card__buttons">
-                        <button tabindex="7" class="smallButton">Code
-                            <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
-                        </button>
-                        <button tabindex="8" class="smallButton">Preview
-                            <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
-                        </button>
-                    </div>
+        <!-- block -->
+        <div id="PUNK API">
+            <div class="card__holder">
+                <div class="card__img-holder">
+                    <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
+                </div>
+                <div class="card__content">
+                    <h3 class="card__subtitle">REACT</h3>
+                    <h2 class="card__title">PUNK API</h2>
+                    <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
+                        dolore
+                        quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa
+                        nam,
+                        est
+                        illo harum cumque.</p>
+                </div>
+                <div class="card__buttons">
+                    <button tabindex="7" class="smallButton smallButton--white">Code
+                        <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
+                    </button>
+                    <button tabindex="8" class="smallButton smallButton--white">Preview
+                        <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
+                    </button>
                 </div>
             </div>
-
+        </div>
+        <!-- block -->
+        <div class="card__holder card__extra-for-website">
+            <div class="card__img-holder">
+                <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
+            </div>
+            <div class="card__content">
+                <h3 class="card__subtitle">REACT</h3>
+                <h2 class="card__title">Extra slot</h2>
+                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
+                    dolore
+                    quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
+                    est
+                    illo harum cumque.</p>
+            </div>
+            <div class="card__buttons">
+                <button tabindex="3" class="smallButton smallButton--white">Code
+                    <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
+                </button>
+                <button tabindex="4" class="smallButton smallButton--white">Preview
+                    <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="card__holder card__extra-for-website">
+            <div class="card__img-holder">
+                <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
+            </div>
+            <div class="card__content">
+                <h3 class="card__subtitle">REACT</h3>
+                <h2 class="card__title">Extra slot</h2>
+                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
+                    dolore
+                    quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
+                    est
+                    illo harum cumque.</p>
+            </div>
+            <div class="card__buttons">
+                <button tabindex="3" class="smallButton smallButton--white">Code
+                    <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
+                </button>
+                <button tabindex="4" class="smallButton smallButton--white">Preview
+                    <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="card__holder card__extra-for-website">
+            <div class="card__img-holder">
+                <img class="card__img" src="./imgs/testImage.png" alt="print screen of client Project">
+            </div>
+            <div class="card__content">
+                <h3 class="card__subtitle">REACT</h3>
+                <h2 class="card__title">Extra slot</h2>
+                <p class="card__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae libero
+                    dolore
+                    quaerat minima ipsa repellat esse tenetur, officia et enim quod architecto, rerum quam culpa nam,
+                    est
+                    illo harum cumque.</p>
+            </div>
+            <div class="card__buttons">
+                <button tabindex="3" class="smallButton smallButton--white">Code
+                    <img class="card__icon" src="./icons/CodeEndTagDark.PNG" alt="">
+                </button>
+                <button tabindex="4" class="smallButton smallButton--white">Preview
+                    <img class="card__icon--bigger" src="./icons/eyeIcon.webp" alt="">
+                </button>
+            </div>
         </div>
     </div>
     <!-- block -->
