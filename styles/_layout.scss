@@ -39,13 +39,23 @@ body::-webkit-scrollbar {
 
     }
 
-    &__links{
+    &__right{
+        display: flex;
         margin-right: 3rem;
+        align-items: center;
+    }    
+    
+    &__links{
+        display: inline;
         width: auto;
-        & a {
+
+    }
+     &__link {
             margin: 0 1rem 0 1rem;
             @include smallFontSizeWeightColor (1rem, 500);
             text-decoration: none;
+        & button {
+            display: inline;
         }
     }
 
@@ -56,7 +66,7 @@ body::-webkit-scrollbar {
     height: 53rem;
     @include flexColumnCenter();
     background-color: $even-lighter-blue;
-    margin: 0 1rem 0 2rem;
+    margin: 0 1rem 0 1rem;
 
     &__message {
         @include smallFontSizeWeightColor(1.3rem, 400);
@@ -64,6 +74,7 @@ body::-webkit-scrollbar {
     }
 
     &__job-discription {
+        text-align: center;
         width: auto;
         @include headerSizeWeight();
         color: $secondary-color;
@@ -290,15 +301,309 @@ body::-webkit-scrollbar {
 }
 // -------------------------------------------------------------------------------
 
-@media screen and (max-width: 768) {
+@media screen and (min-width:451px) and (max-width: 1023px) {
+    body {
+        width: 98vw;
+        height: 100%;
+        @include flexColumnCenter;
+        flex-wrap: wrap;
+    }
     
+    body::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0 2rem 0;
+    
+        &__left-side {
+            padding-left: 3rem;
+        }
+    
+        &__my-name {
+            display: inline;
+            @include headerSizeWeight(1.5rem, 7000)
+        }
+    
+        &__left-icon {
+            @include smallIconSizingWidthHeight ();
+            margin-right: 0.3rem
+        }
+    
+        &__right-icon {
+            display: none;
+    
+        }
+    
+        &__links{
+            width: auto;
+            display: block;
+            @include flexColumnCenter();
+    
+        }
+         &__link {
+                margin: 0 1rem 0.5rem 1rem;
+                @include smallFontSizeWeightColor (1rem, 500);
+                text-decoration: none;
+        }
+    
+    }
+    
+    .welcome {
+        width: 100%;
+        height: 53rem;
+        @include flexColumnCenter();
+        background-color: $even-lighter-blue;
+        margin: 0 1rem 0 0.5rem;
+    
+        &__message {
+            @include smallFontSizeWeightColor(1.3rem, 400);
+            margin-bottom: 2rem;
+        }
+    
+        &__job-discription {
+            text-align: center;
+            width: auto;
+            @include headerSizeWeight();
+            color: $secondary-color;
+        }
+    
+        &__work-link {
+            @include flexRowCenterJustify();
+            text-align: left;
+            @include smallFontSizeWeightColor(1.2rem, 700, $secondary-color);
+            margin-top: 7rem;
+    
+            img {
+                @include smallIconSizingWidthHeight();
+                margin: 0.1rem 0 0 1rem
+            }
+        }
+    
+    }
+    
+    .skills {
+        @include flexColumnCenter();
+        margin: 3rem 0 3rem 0;
+    
+        &__header {
+            text-align: center;
+            justify-content: center
+        }
+    
+        &__title {
+            @include headerSizeWeight(2rem, 600);
+            margin-bottom: 4rem;
+        }
+        &__subtitle {
+            display: inline-block;
+            width: 60%;
+            @include smallFontSizeWeightColor ();
+            margin-bottom: 3rem;
+        }
+    }
+    
+    
+    
+    .icons {
+        display: grid;
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 2rem; 
+        grid-template-areas: 
+          ". . . ."
+          ". . . ."
+          ". --springBoot --springBoot ."; 
+            
+        &__item {
+            @include flexColumnCenter ();
+
+            &--springBoot{
+                grid-area: --springBoot
+            }
+        }
+    
+        &__label {
+            @include smallFontSizeWeightColor (1rem, 500);
+            margin: 0.7rem auto 0 auto;
+        }
+    
+    }
+    .projects__title {
+        text-align: center;
+        margin: 0 2rem 3rem 2rem;
+        @include headerSizeWeight (2rem, 600)
+    }
+    
+    
+    .card {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+    
+    
+    
+    
+        &__holder {
+            @include WidthHeight (400px, auto);
+            padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+            opacity: 0.5;
+            margin-left: 5%;
+        }
+    
+        &__holder:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 1px 3px 3px 3px;
+            opacity: 1.0;
+        }
+    
+    
+        &__img-holder {
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            width: auto;
+            padding: 3rem 0.3rem 0 0.3rem;
+            background-color: $lighter-blue;
+        }
+    
+        &__img {
+            @include WidthHeight (300px, auto);
+            border-radius: 5px 5px 0 0;
+            background-color: white;
+        }
+    
+        &__content {
+            width: 350px;
+            margin: auto;
+        }
+    
+        &__subtitle {
+            @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
+            margin: 2rem 0 0.5rem 0;
+        }
+    
+        &__title {
+            @include headerSizeWeight(2rem, 600);
+            margin-bottom: 1rem;
+        }
+    
+        &__info {
+            padding: 0 1rem 0 0;
+            @include smallFontSizeWeightColor ();
+        }
+    
+        &__buttons {
+            @include flexRowCenterJustify (flex-start);
+            margin: 2rem 0 1rem 0;
+        }
+    
+        &__icon {
+            @include smallIconSizingWidthHeight (20px, auto);
+    
+            &--bigger {
+                @include smallIconSizingWidthHeight (35px, auto);
+            }
+        }
+    }
+    
+    .about {
+        flex-wrap: nowrap;
+            @include WidthHeight (40rem, auto);          
+            display: grid; 
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows: 0.5fr 1fr 0.5fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+              ". __title ."
+              "__paragraph __paragraph __img-container"
+              "__paragraph __paragraph ."; 
+              aspect-ratio: 1/1;
+
+          
+    
+        &__img-container {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-area: __img-container; 
+          }
+    
+        
+        
+        &__profile-img {
+            position: relative;
+            border-radius: 10px;
+            grid-area: 2 / 2 / 7 / 6;
+        }
+    
+        &__title {
+            text-align: center;
+            padding: 10rem 0 3rem 0;
+            @include headerSizeWeight (2.5rem, 600);
+            grid-area: __title;
+    
+        }
+    
+        &__icons {
+    
+            &--finger {
+                z-index: 1;
+                 grid-area: 1 / 1 / 3 / 3; ; 
+                 margin: 1rem 0 0 0
+                }
+
+
+            &--squig {
+                margin-left: 7rem;
+                z-index: 1;
+                grid-area: 5 / 5 / 7 / 7;;
+            }
+        }
+    
+        &__paragraph {
+            @include smallFontSizeWeightColor();
+            grid-area: __paragraph;
+            padding-right: 3rem;
+        }
+    }
+    
+    .footer {
+        width: 45rem;
+        height: 7rem;
+        background-color: $secondary-color;
+        text-align: center;
+        padding: 1rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    
+        &__icon {
+            @include smallIconSizingWidthHeight ();
+        }
+    
+        &__email {
+            @include headerSizeWeight (3rem 600);
+            color: white;
+            padding-bottom: 1rem;
+        }
+    }
 }
 
 // -------------------------------------------------------------------------------
 
 @media screen and (max-width: 450px) {
     body {
-        width: 98vw;
+        width: 96vw;
+        margin: 0 auto 0 auto;
         height: 100%;
         @include flexColumnCenter;
         flex-wrap: wrap;
@@ -336,7 +641,7 @@ body::-webkit-scrollbar {
             margin-left: 5.2rem;
         }
 
-        &__links {
+        &__right {
             display: none;
         }
     }
@@ -396,8 +701,14 @@ body::-webkit-scrollbar {
     .icons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-gap: 2rem;
         margin-bottom: 5rem;
+        grid-template-areas: 
+        ". . ."
+        ". . ."
+        ". . --springBoot"
+        ;
 
         &__item {
             display: flex;
@@ -493,54 +804,56 @@ body::-webkit-scrollbar {
         display: grid;
         flex-wrap: wrap;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr;
         grid-template-areas:
         "__title"
         "__img-container"  
         "__paragraph";
-        margin: 0 auto 3rem auto;
-
-        &__img-container {
-            @include WidthHeight (auto, auto);
-            grid-area: __img-container;
-        }
+        margin: 3rem auto 3rem -1rem;
 
         &__title {
             text-align: center;
             @include headerSizeWeight (2.5rem, 600);
-            margin-top: 1rem;
-            padding-top: 7rem;
             grid-area: __title;
-
+            padding-top: 5rem;
         }
 
+        &__img-container {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-area: __img-container; 
+          }
+    
+        
+        
         &__profile-img {
-            @include WidthHeight (275px, 20rem);
-            position: absolute;
+            position: relative;
             border-radius: 10px;
-            object-fit: cover;
+            grid-area: 2 / 2 / 7 / 6;
         }
 
         &__icons {
-
-            &--finger {
-                position: relative;
-                right: 10%;
-                top: -15%
+    
+                &--finger {
+                    z-index: 1;
+                     grid-area: 1 / 1 / 3 / 3; ; 
+                     margin: 1rem 0 0 1rem
+                    }
+    
+    
+                &--squig {
+                    margin-left: 0.1rem;
+                    z-index: 1;
+                    grid-area: 5 / 5 / 7 / 7;;
+                }
             }
-
-            &--squig {
-                position: relative;
-                left: 25%;
-                top: 50%;
-                overflow: hidden;
-            }
-        }
 
         &__paragraph {
-            @include WidthHeight (275px, auto);
-            margin-top: 5rem;
+            @include smallFontSizeWeightColor();
             grid-area: __paragraph;
+            margin-left: 1.5rem;
         }
     }
 
