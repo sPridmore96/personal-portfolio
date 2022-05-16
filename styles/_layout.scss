@@ -187,7 +187,7 @@ body::-webkit-scrollbar {
     }
 
     &__subtitle {
-        @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
+        @include smallFontSizeWeightColor (0.8rem, 700, $darkerBlue);
         margin: 2rem 0 0.5rem 0;
     }
 
@@ -287,6 +287,8 @@ body::-webkit-scrollbar {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+   }
+    }
 
     &__icon {
         @include smallIconSizingWidthHeight ();
@@ -299,6 +301,7 @@ body::-webkit-scrollbar {
     }
 }
 }
+
 // -------------------------------------------------------------------------------
 
 @media screen and (min-width:451px) and (max-width: 1023px) {
@@ -484,7 +487,7 @@ body::-webkit-scrollbar {
         }
     
         &__subtitle {
-            @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
+            @include smallFontSizeWeightColor (0.8rem, 700, $darkerBlue);
             margin: 2rem 0 0.5rem 0;
         }
     
@@ -585,7 +588,7 @@ body::-webkit-scrollbar {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
-    
+        
         &__icon {
             @include smallIconSizingWidthHeight ();
         }
@@ -772,7 +775,7 @@ body::-webkit-scrollbar {
         }
 
         &__subtitle {
-            @include smallFontSizeWeightColor (0.8rem, 700, $primary-color);
+            @include smallFontSizeWeightColor (0.8rem, 700, $darkerBlue);
             margin: 2rem 0 0.5rem 0;
         }
 
