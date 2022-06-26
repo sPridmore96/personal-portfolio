@@ -156,7 +156,7 @@
 
 
         &__holder {
-            @include WidthHeight (400px, auto);
+            @include WidthHeight (500px, 50rem);
             padding: 0.7rem 0.5rem 0.7rem 0.5rem;
             opacity: 0.5;
             margin-left: 5%;
@@ -178,7 +178,7 @@
         }
 
         &__img {
-            @include WidthHeight (300px, auto);
+            @include WidthHeight (375px, 450px);
             border-radius: 5px 5px 0 0;
             background-color: white;
         }

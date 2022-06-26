@@ -197,8 +197,8 @@
     grid-gap: 5rem;
   }
   .card__holder {
-    width: 400px;
-    height: auto;
+    width: 500px;
+    height: 50rem;
     padding: 0.7rem 0.5rem 0.7rem 0.5rem;
     opacity: 0.5;
     margin-left: 5%;
@@ -216,8 +216,8 @@
     background-color: #E3F6F5;
   }
   .card__img {
-    width: 300px;
-    height: auto;
+    width: 375px;
+    height: 450px;
     border-radius: 5px 5px 0 0;
     background-color: white;
   }
