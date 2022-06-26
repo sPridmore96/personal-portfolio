@@ -1,6 +1,8 @@
 @use "./variables" as *;
 @use "./mixins" as *;
 
+
+
 @media screen and (min-width: 1024px) {
 
     body {
@@ -71,7 +73,7 @@
             margin-bottom: 2rem;
         }
 
-        &__job-discription {
+        &__job-description {
             text-align: center;
             width: auto;
             @include headerSizeWeight();
@@ -375,7 +377,7 @@
                 margin-bottom: 2rem;
             }
 
-            &__job-discription {
+            &__job-description {
                 text-align: center;
                 width: auto;
                 @include headerSizeWeight();
@@ -666,7 +668,7 @@
                 margin: 0 0 0.5rem -7rem;
             }
 
-            &__job-discription {
+            &__job-description {
                 width: 20rem;
                 @include headerSizeWeight();
                 color: $secondary-color;
